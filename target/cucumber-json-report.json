@@ -1,0 +1,110 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-05T05:54:39.374Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17362993200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.StepDefs.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User is able to able to login with correct username and correct password.",
+        "description": "",
+        "id": "user-should-be-able-to-login-so-that-user-can-use-functionality-of-app.;user-is-able-to-able-to-login-with-correct-username-and-correct-password.",
+        "after": [
+          {
+            "result": {
+              "duration": 1345076900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.StepDefs.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Navigation to login page is successfully"
+            ],
+            "result": {
+              "duration": 15236871500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": ":User is on the login page",
+            "match": {
+              "location": "stepdefs.StepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#user_login\"}\n  (Session info: chrome\u003d90.0.4430.212)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027NITIN-PC\u0027, ip: \u0027192.168.12.1\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\HP\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:50730}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a6618d7c93dce83b3bcc256280480096\n*** Element info: {Using\u003did, value\u003duser_login}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat pageobjects.LoginPageObjects.login(LoginPageObjects.java:20)\r\n\tat stepdefs.StepDefs.user_should_be_login_as_username_as_and_password_as(StepDefs.java:50)\r\n\tat ✽.:User should be login as username as \"username\" and password as \"password\".(classpath:Features/Myfeatures.feature:5)\r\n",
+              "duration": 50129867300,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": ":User should be login as username as \"username\" and password as \"password\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 64
+                }
+              ],
+              "location": "stepdefs.StepDefs.user_should_be_login_as_username_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": ":User should be successfully logged in the app.",
+            "match": {
+              "location": "stepdefs.StepDefs.user_should_be_successfully_logged_in_the_app()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "User should be able to login so that user can use functionality of app.",
+    "description": "",
+    "id": "user-should-be-able-to-login-so-that-user-can-use-functionality-of-app.",
+    "keyword": "Feature",
+    "uri": "classpath:Features/Myfeatures.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
